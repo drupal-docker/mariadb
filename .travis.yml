@@ -5,8 +5,11 @@ services:
 
 env:
   matrix:
+    - DOCKERFILE="5.5"
     - DOCKERFILE="10.0"
     - DOCKERFILE="10.1"
+    - DOCKERFILE="10.2"
+    - DOCKERFILE="10.3"
 
 before_script:
   - docker version
